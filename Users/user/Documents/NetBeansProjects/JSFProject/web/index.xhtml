@@ -24,7 +24,7 @@
                 <h:message for="soyisim" style="color:red"/>   
 
                 <h:outputText value="Sisteme giris parolaniz:"/>
-                <h:inputText id="parola" value="#{formValidationBean.parola}" required="true" requiredMessage="Parola alani zorunludur"/>
+                <h:inputSecret id="parola" value="#{formValidationBean.parola}" required="true" requiredMessage="Parola alani zorunludur"/>
                 <h:message for="parola" style="color:red"/>
             </h:panelGrid>
             <h:panelGrid columns="2">

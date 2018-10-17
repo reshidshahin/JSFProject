@@ -8,7 +8,6 @@ package com.shahin.Project;
 import java.io.IOException;
 import java.util.LinkedHashMap;
 import java.util.Map;
-import javax.annotation.PostConstruct;
 import javax.faces.bean.ManagedBean;
 import javax.faces.bean.RequestScoped;
 import javax.servlet.Filter;
@@ -105,8 +104,8 @@ public class FormValidationBean implements Filter{
     }
 
     static {
-        cinsiyetler.put("Erkek", "Erkek");
-        cinsiyetler.put("Bayan", " Bayan");
+        cinsiyetler.put("Kişi", "Kişi");
+        cinsiyetler.put("Qadin", "Qadin");
     }
 
     public Map<String, Object> cinsiyetleridondur(){
@@ -122,11 +121,11 @@ public class FormValidationBean implements Filter{
     }
 
     static {
-        iller.put("Istanbul", "Istanbul");
-        iller.put("Ankara", "Ankara");
-        iller.put("Balikesir", "Balikesir");
-        iller.put("Bursa", "Bursa");
-        iller.put("Erzurum", "Erzurum");
+        iller.put("Baki", "Baki");
+        iller.put("Sumqayit", "Sumqayit");
+        iller.put("Gence", "Gence");
+        iller.put("Naxcivan", "Naxcivan");
+        iller.put("Şirvan", "Şirvan");
 
     }
 
@@ -144,8 +143,8 @@ public class FormValidationBean implements Filter{
     }
  
     static {
-        hesapvarmi.put("Evet", "Evet");
-        hesapvarmi.put("Hayir", "Hayir");
+        hesapvarmi.put("Beli", "Beli");
+        hesapvarmi.put("Yoxdur", "Yoxdur");
     }
     public Map<String, Object> hesapvarmidondur() {
         return hesapvarmi;
