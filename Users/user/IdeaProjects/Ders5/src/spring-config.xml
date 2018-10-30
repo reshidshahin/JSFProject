@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+    <bean id="Cars" class="com.shahin.Cars">
+        <property name="enHizli">
+            <bean class="com.shahin.Car">
+                <property name="marka" value="Tesla"/>
+                <property name="model" value="Model S"/>
+            </bean>
+        </property>
+
+        <property name="diger">
+            <list>
+                <bean class="com.shahin.Car">
+                    <property name="marka" value="Lamborghini"/>
+                    <property name="model" value="Avendator"/>
+                </bean>
+
+                <bean class="com.shahin.Car">
+                    <property name="marka" value="BMW"/>
+                    <property name="model" value="745"/>
+                </bean>
+            </list>
+        </property>
+    </bean>
+
+</beans>
