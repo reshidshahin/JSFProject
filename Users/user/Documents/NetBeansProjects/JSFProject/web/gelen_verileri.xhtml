@@ -14,22 +14,15 @@ and open the template in the editor.
     </head>
     <body>
         <h:form>
-            <h:panelGrid columns="1">
-                <h:outputText value="--- Melumatlar --- "/>
-                <h:outputText value="--- Ad --- "/>
-                <h:outputText value="#{formValidationBean.isim}"/>
-                <h:outputText value="--- Soyad --- "/>
-                <h:outputText value="#{formValidationBean.soyisim}"/>
-                <h:outputText value="--- Email --- "/>
-                <h:outputText value="#{formValidationBean.eposta}"/>
-                <h:outputText value="--- Parol --- "/>
-                <h:outputText value="#{formValidationBean.parola}"/>
-                <h:outputText value="--- İl --- "/>
-                <h:outputText value="#{formValidationBean.il}"/>
-                <h:outputText value="--- Cinsiyet --- "/>
-                <h:outputText value="#{formValidationBean.cinsiyet}"/>
-                <h:outputText value="--- Adres --- "/>
-                <h:outputText value="#{formValidationBean.adres}"/>
+            <h:outputText value="---Melumatlar---" style="border-color: deepskyblue"/>
+            <h:panelGrid columns="2" border="1">
+                Ad:<h:outputText value="#{formValidationBean.isim}"/>
+                Soyad:<h:outputText value="#{formValidationBean.soyisim}"/>
+                Email:<h:outputText value="#{formValidationBean.eposta}"/>
+                Parol:<h:outputText value="#{formValidationBean.parola}"/>
+                İl:<h:outputText value="#{formValidationBean.il}"/>
+                Cinsiyet:<h:outputText value="#{formValidationBean.cinsiyet}"/>
+                Adres:<h:outputText value="#{formValidationBean.adres}" style="align-content: flex-end"/>
             </h:panelGrid>  
         </h:form>
     </body>
